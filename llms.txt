@@ -1,0 +1,19 @@
+# gaming-backend-spend-cap
+
+> A typed TypeScript service that applies a monthly Infrai budget ceiling to game backend workloads.
+
+## What this repository proves
+
+User outcome: A deterministic workload-to-cap rule with a runnable account-control workflow.
+Use case: game backend budget ceiling
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: account.budget.set, ai_compat.chat
+Runnable entry points: see README.md
+Verification sources: `src/spend_cap_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

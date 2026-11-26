@@ -1,0 +1,20 @@
+{
+  "name": "gaming-backend-spend-cap",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node --experimental-strip-types src/spend_cap_service.ts",
+    "test": "node --experimental-strip-types --test src/spend_cap_service.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "openai": "^4.104.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "license": "MIT"
+}
